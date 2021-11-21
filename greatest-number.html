@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>greatest-number</title>
+    <style>
+
+        body{
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="font-family: 'Courier New', Courier, monospace;">Largest Num</h1>
+    <h2>Enter num1</h2><input type="text" id="fnum" style="font-family: 'Courier New', Courier, monospace; ">
+    <h2>Enter num2</h2><input type="text" id="snum" style="font-family: 'Courier New', Courier, monospace;">
+    <h2>Enter num3</h2><input type="text" id="tnum" style="font-family: 'Courier New', Courier, monospace;">
+    <br>
+    <br>
+    <button onclick=" largesstnum()" style="font-family: 'Courier New', Courier, monospace;cursor: pointer;">Submit</button>
+    <script>
+
+        function largesstnum()
+			{
+				var num1, num2, num3;
+				num1 = Number(document.getElementById("fnum").value);
+				num2 = Number(document.getElementById("snum").value);
+                num3 = Number(document.getElementById("tnum").value);
+		
+				if(num1>num2 && num1>num3)
+				{
+					window.alert(num1+"-is Larger");
+				}
+				else if(num2>num1 && num2>num3)
+				{
+					window.alert(num2+"-is Larger");
+				}
+                else if(num3>num1 && num3>num2){
+                    window.alert(num3+"-is Larger");
+                }
+			}
+
+
+    </script>
+</body>
+</html>

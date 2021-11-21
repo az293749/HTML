@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>odds-evens</title>
+    <style>
+        *{
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>Enter num1</h2><input type="text" id="fnum" style="font-family: 'Courier New', Courier, monospace;">
+    <br><br>
+    <button onclick="odds_evens()" style="cursor: pointer; font-family: 'Courier New', Courier, monospace;">Submit</button>
+</body>
+<script>
+    function odds_evens(){
+        var num1;
+        num1 = Number (document.getElementById("fnum").value);
+        if(num1%2 == 0){
+            window.alert (num1+" is even");
+        }
+        else{
+            window.alert(num1+" is odd")
+        }
+    }
+</script>
+</html>
